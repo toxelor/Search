@@ -157,7 +157,7 @@ const App = () => {
         event.preventDefault()
     }
  
-    const title = 'Маша'
+    const title = 'Anon'
 
 
     const sumComments = React.useMemo(() => getSumComments(stories), [
