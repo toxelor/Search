@@ -1,0 +1,186 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  min-height: 60vw; 
+  height: auto;
+  padding: 40px; 
+  background: #83a4d4; /* fallback for old browsers */ 
+  background: linear-gradient(to left, #b6fbff, #83a4d4);
+  background-repeat: repeat;
+  color: #171212; 
+} 
+
+.headline-primary { 
+  font-size: 48px; 
+  font-weight: 300; 
+  letter-spacing: 2px; 
+}
+
+.item { 
+  display: flex; 
+  align-items: center; 
+  padding: 3px 0;
+  margin-bottom: 5px;
+  border: #000000 1px solid;
+  transition: 500ms; 
+}
+
+.item:hover {
+  transform: translate(-5px, -2px);
+  transition: 500ms;
+  color: white;
+  background-color: black;
+  margin: 8px 0;
+}
+
+
+
+.item:hover > span > button > svg > g{
+  fill: #ffffff; 
+  stroke: #ffffff; 
+}
+
+.item:hover > span > button {
+  border: #ffffff 1px solid;
+}
+
+.item > span { 
+  padding: 0 5px; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+} 
+
+.item > span > a { 
+  color: inherit;
+  text-decoration: none;
+}
+
+.item:hover > span > a {
+  text-decoration: underline;
+}
+
+.button { 
+  background: transparent; 
+  border: 1px solid #171212; 
+  padding: 5px; 
+  cursor: pointer; 
+  transition: all 0.1s ease-in; 
+}
+
+.button-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.button:hover { 
+  background: #171212; 
+  color: #ffffff; 
+}
+
+.button > svg > g {
+  fill: #000000; 
+  stroke: #ffffff; 
+}
+
+.button:hover > svg > g { 
+  fill: #ffffff; 
+  stroke: #ffffff; 
+}
+
+.button:hover > svg {
+  animation: 2s infinite alternate App-logo-spin
+}
+
+.button_small { 
+  padding: 5px; 
+} 
+
+.button_large { 
+  padding: 10px; 
+}
+
+.search-form { 
+  padding: 10px 0 20px 0; 
+  display: flex; 
+  align-items: baseline; 
+} 
+
+.label { 
+  border-top: 1px solid #171212; 
+  border-left: 1px solid #171212;
+  padding-left: 5px; font-size: 24px; 
+} 
+
+.input { 
+  border: none; 
+  border-bottom: 1px solid #171212; 
+  background-color: transparent; 
+  font-size: 24px; 
+}
+
+.sorting {
+  display: flex; 
+  align-items: center; 
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.active:hover { 
+  background: #171212; 
+  color: #ffffff; 
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation > button {
+  margin-top: 10px;
+  margin-right: 5px;
+  width: 30px;
+}
+
+.loader {
+  animation: 1s infinite App-logo-spin;
+}
+
+
